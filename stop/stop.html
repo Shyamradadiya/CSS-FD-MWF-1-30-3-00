@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style> 
+#give, #get {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(240, 20, 20);
+  color: white;
+}
+
+#give {
+    padding: 30px 50px 20px 50px;
+  display: none;
+  width: 40px;
+  margin-left: 45%;
+}
+</style>
+</head>
+<body>
+ <h1>This is the Example to stop the dropdown anytime</h1>
+<button id="stop">Click hear to stop</button>
+
+<div id="get">Click to slide down panel</div>
+<div id="give">Home
+    <br>About<br>
+    Product<br>
+    Services<br>
+    Contact
+</div>
+
+</body>
+<script> 
+    $(document).ready(function(){
+      $("#get").click(function(){
+        $("#give").slideDown(5000);
+      });
+      $("#stop").click(function(){
+        $("#give").stop();
+      });
+    });
+    </script>
+</html>

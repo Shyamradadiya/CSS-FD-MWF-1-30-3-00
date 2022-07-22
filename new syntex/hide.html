@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        p{
+            border: solid 2px black;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border: 0;
+            outline: 0;
+            box-shadow: 8px 2px 19px ;
+        }
+    </style>
+</head>
+<body>
+        <h1>This is an Example of Animation CSS</h1>
+        <br><br><br><br><br>
+        <div class="div-2">
+        <center>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+        </center>
+    </div>
+    <br><br><br><br><br>
+    <button>Click Here</button>
+    <button id="btn">Click Here To Replace</button>
+</body>
+<script>
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").css("width","90px")
+    });
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").css("height","90px")
+    });
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").css("transition","0.5s ease")
+    });
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").css("transition","0.5s ease")
+    });
+});
+
+$(document).ready(function(){
+    $("#btn").click(function(){
+        $("p").css("width","30px")
+    });
+});
+
+$(document).ready(function(){
+    $("#btn").click(function(){
+        $("p").css("height","30px")
+    });
+});
+
+$(document).ready(function(){
+    $("#btn").click(function(){
+        $("p").css("transition","0.5s ease")
+    });
+});
+
+
+</script>
+</html>

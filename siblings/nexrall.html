@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next All Elements</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>This is the Example of Next all Elaments Select</h1>
+    <h4>Hello World!</h4>
+    <h5>How Are You</h5>
+    <p>Good Morning</p>
+    <h6>I am Shyam Radadiya</h6>
+    <i><b>I am Web Developer</b></i>
+</body>
+<script>
+    $(document).ready(function(){
+        $("h5").nextAll().css({"color":"red","border":"solid 2px red"});
+    });
+</script>
+</html>
