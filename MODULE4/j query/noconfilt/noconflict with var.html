@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>This is the Example of NoConfflict WIth var</h1>
+<h2>Can we see anything Changes by clicking the button</h2>
+<button>Click here</button>
+</body>
+<script>
+    var jac=$.noConflict();
+    jac(document).ready(function(){
+        jac("button").click(function(){
+            jac("h2").text("Congrulates JQuery is Running")
+        });
+    });
+</script>
+</html>

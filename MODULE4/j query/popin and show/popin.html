@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide" onclick="get()">Hide</button>
+<button id="show">Show</button>
+<script>
+    $(document).ready(function(){
+      $("#hide").mouseenter(function(){
+        $("p").hide();
+        alert("This paragraph is hidden");
+      });
+      $("#show").mouseenter(function(){
+        $("p").show();
+        alert("This paragraph is showen");
+      });
+    });
+    </script>
+</body>
+</html>
